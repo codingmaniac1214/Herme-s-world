@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rides</title>
+    <link rel="icon" href="favicon.ico">
+
+    <style>
+
+
+    *{
+
+
+
+      height 100%;
+    }
+
+      .hi{
+
+        font-weight:bold;
+      }
+
+      .yo li{
+
+
+        text-decoration:none;
+        display:inline;
+        background-color:#D8BFD8;
+        font-size:16px;
+        color:blue;
+        font-weight:bolder;
+        font-family:serif;
+        margin:100px;
+
+      }
+      .hi{
+        margin-left:30px;
+      }
+      .hey{
+        float: right;
+    margin-top: 80px;
+    list-style: none;
+    font-family: Verdana, sans-serif;
+    font-size: medium;
+      }
+      .hey li{
+        display: inline-block;
+
+
+      }
+      .hey li a{
+
+        margin: 2px;
+    text-decoration: none;
+    border-style: solid;
+    border-color:white ;
+    border-radius: 10px;
+    padding: 10px 20px;
+    /* font-family: poppins; */
+    font-family:serif;
+    color:#FFFACD;
+    font-decoration:none;
+    font-weight:bolder;
+    font-style:bold;
+S
+
+
+      }
+      .hey li a:hover{
+        background-color:white;
+        color:black;
+      }
+      .logo img{
+        position:absolute;
+        margin-top:5px;
+        margin-left:10px;
+        
+      }
+      .hm{
+        margin-top:10px;
+        margin-left:150px;
+      }
+      .hey li a{
+        border:2px solid #FFFACD;
+        border-radius:10px;
+      }
+      body{
+
+        background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("https://c4.wallpaperflare.com/wallpaper/800/831/598/digital-art-neon-mountains-lake-wallpaper-preview.jpg");
+        height:100vh;
+
+        background-position: center;
+        background-size: cover;
+        height:100%;
+
+        background-attachment: fixed;
+
+      }
+      hr{
+        filter:brightness(40%);
+      }
+      /* Button used to open the chat form - fixed at the bottom of the page */
+      .open-button {
+      background-color:#00FA9A;
+      color: white;
+      padding: 16px 20px;
+      border: 5px solid #006400	;
+      cursor: pointer;
+
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      width: 280px;
+      border-radius:10px
+      }
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+    </style>
+
+
+  </head>
+<body>
+  <button class="open-button" onclick="openForm()">CHAT WITH US</button>
+
+  <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>ASK YOUR DOUBT</h1>
+
+      <label for="msg"><b>ENTER THE QUERY BELOW</b></label>
+      <textarea placeholder="Type message.." name="msg" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+
+
+
+
+  </div>
+
+  <div class="logo">
+    <a href="index.html"><img src="gifs/logo.jpg" alt="logo" style="width:90px;height:90px;" /></a>
+  </div>
+  <div class="hm">
+
+
+    <nav class="hey">
+      <li><a href="index.html"><b>HOME</b></a></li>
+
+        <li title="CLICK TO SEE MORE ABOUT RIDES"><a href="RIDES.html"><b>RIDES</b></a></li>
+      
+        <li><a href="events.html"><b>EVENTS</b></a></li>
+        <li><a href="faq.html"><b>FAQs</b></a></li>
+        <li><a href="BOOKING.html"><b>BOOK NOW</b></a></li>
+    </nav>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+  <br /><br />
+
+  <div class="hh">
+
+
+
+
+    <img class="no" src="gifs/LL.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>BUTTERFLIER</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">This metal monster dominates the skies over Silverwood. At 191 feet,this beast
+    is really two thrills in one because not only does it take you forwards
+    through a cobra roll and inverted loop, but backwards as well!
+
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>LOW INTENSITY</li>
+    <li>54-80 INCHES HEIGHT</li>
+    <li>ROLLER COASTER ALLEY</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>
+  <div class="hh">
+
+
+
+
+    <img class="no" src="https://marvel-b1-cdn.bc0a.com/f00000000078081/www.silverwoodthemepark.com/images/rides/low/barnstormer.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>BARNSTORMER</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">TThis family-fun ride gives you the feeling you’re flying freely among the clouds, yet mild enough for all ages. Located in Critter Camp, Barnstormer seats 20 passengers and can easily accommodate adults as well as children.
+
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>LOW INTENSITY</li>
+    <li>40-80 INCHES HEIGHT</li>
+    <li>CRITTER CRAMP</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>
+  <div class="hh">
+
+
+
+
+    <img class="no" src="https://marvel-b1-cdn.bc0a.com/f00000000078081/www.silverwoodthemepark.com/images/rides/low/wave-pool.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>BOULDER BEACH BAY</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">Sometimes one just isn't enough. That's why we have not one, but two wave pools for you and your family to enjoy. Having a hard time choosing which one to play in? Well, you are in luck because both are precisely as fun as the other. Boulder Beach Bay is the perfect location to relax and enjoy the North Idaho beauty. Each wave pool is set to a 5 minute interval between waves and calm water so you don't have to wait long to get out and play. Once you hear the horn sound, the waves will soon follow.
+
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>LOW INTENSITY</li>
+    <li>54-ALL RIDERS</li>
+    <li>BOULDER BEACH</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>
+  <div class="hh">
+
+
+
+
+    <img class="no" src="https://marvel-b1-cdn.bc0a.com/f00000000078081/www.silverwoodthemepark.com/images/rides/low/antique-cars.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>ANTIQUE CARS</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">Hop behind the wheel of one of our Antique Cars! These cars were made for those without a license.
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>LOW INTENSITY</li>
+    <li>54-80 INCHES HEIGHT</li>
+    <li>ROLLER COASTER ALLEY</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>
+  <div class="hh">
+
+
+
+
+    <img class="no" src="https://marvel-b1-cdn.bc0a.com/f00000000078081/www.silverwoodthemepark.com/images/rides/low/carousel.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>CAROUSEL</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">The first ride you will see at Silverwood, the carousel is a favorite for all ages.
+
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>LOW INTENSITY</li>
+    <li>54-80 INCHES HEIGHT</li>
+    <li>ROLLER COASTER ALLEY</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>
+  <div class="hh">
+
+
+
+
+    <img class="no" src="https://marvel-b1-cdn.bc0a.com/f00000000078081/www.silverwoodthemepark.com/images/rides/low/lazy-river.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>ELKHORN CREEK</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">This metal monster dominates the skies over Silverwood. At 191 feet,this beast
+    is really two thrills in one because not only does it take you forwards
+    through a cobra roll and inverted loop, but backwards as well!
+
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>LOW INTENSITY</li>
+    <li>54-80 INCHES HEIGHT</li>
+    <li>ROLLER COASTER ALLEY</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>
+  <div class="hh">
+
+
+
+
+    <img class="no" src="https://marvel-b1-cdn.bc0a.com/f00000000078081/www.silverwoodthemepark.com/images/rides/low/ferris-wheel.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>FERRIS WHEEL</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">The classic of classic rides, enjoy the ride on and the sights from the Ferris Wheel.
+
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>LOW INTENSITY</li>
+    <li>54-80 INCHES HEIGHT</li>
+    <li>ROLLER COASTER ALLEY</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>
+  <div class="hh">
+
+
+
+
+    <img class="no" src="https://marvel-b1-cdn.bc0a.com/f00000000078081/www.silverwoodthemepark.com/images/rides/med/avalanche.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>AVALANCHE MOUNTAIN</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">This metal monster dominates the skies over Silverwood. At 191 feet,this beast
+    is really two thrills in one because not only does it take you forwards
+    through a cobra roll and inverted loop, but backwards as well!
+
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>MEDIUM INTENSITY</li>
+    <li>48-80 INCHES HEIGHT</li>
+    <li>BOULDER BEACH</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>
+  <div class="hh">
+
+
+
+
+    <img class="no" src="https://marvel-b1-cdn.bc0a.com/f00000000078081/www.silverwoodthemepark.com/images/rides/med/bumper-boats.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>BUMPER BOATS</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">Our guarantee to you: You will get bumped, you will get soaked, you will love it. If you are looking for a ride that the whole family can get in on the fun, the Bumper Boats is the attraction for you. Once you are aboard your personal boat, you will be detached from the dock and out into the waters where your closest friends might be the ones trying to get you soaked. Laughs and giggles can always be heard from this classic attraction.
+
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>MED INTENSITY</li>
+    <li>54-80 INCHES HEIGHT</li>
+    <li>BOULDER BEACH</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>
+  <div class="hh">
+
+
+
+
+    <img class="no" src="https://marvel-b1-cdn.bc0a.com/f00000000078081/www.silverwoodthemepark.com/images/rides/med/krazy-koaster.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>KRAZY KOASTER</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">This family-fun ride spins you around as you ride the figure eight track. Located in Critter Camp, The Krazy Koaster seats passengers back to back and can easily accommodate adults as well as children. Hop on and go for a spin!
+
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>MED INTENSITY</li>
+    <li>54-80 INCHES HEIGHT</li>
+    <li>ROLLER COASTER ALLEY</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>
+  <div class="hh">
+
+
+
+
+    <img class="no" src="gifs/LL.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>BUTTERFLIER</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">This metal monster dominates the skies over Silverwood. At 191 feet,this beast
+    is really two thrills in one because not only does it take you forwards
+    through a cobra roll and inverted loop, but backwards as well!
+
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>LOW INTENSITY</li>
+    <li>54-80 INCHES HEIGHT</li>
+    <li>CRITTER CRAMP</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>
+  <div class="hh">
+
+
+
+
+    <img class="no" src="https://marvel-b1-cdn.bc0a.com/f00000000078081/www.silverwoodthemepark.com/images/rides/thrill/aftershock.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>AFTERSHOCK</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">This metal monster dominates the skies over Silverwood. At 191 feet, this beast is really two thrills in one because not only does it take you forwards through a cobra roll and inverted loop, but backwards as well!
+
+Once you board, the cars will slowly move backwards up the starting tower until you’re staring straight at the ground. Then gravity will take over and pull you straight down as you reach speeds of up to 65 miles per hour! You’ll twist and turn though mind-blowing loops and rolls until you reach the second tower. This time, you’ll be looking at the sky as the coaster pulls you upward at a 90-degree angle, only to release and send you barreling through the whole thing backwards!
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>HIGH INTENSITY</li>
+    <li>54-80 INCHES HEIGHT</li>
+    <li>ROLLER COASTER ALLEY</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>
+  <div class="hh">
+
+
+
+
+    <img class="no" src="https://marvel-b1-cdn.bc0a.com/f00000000078081/www.silverwoodthemepark.com/images/rides/thrill/corkscrew.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>CORKSCREW</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">Originally opening at Knott's Berry Farm in 1975, the Corkscrew was the first modern inverting coaster. This amazing coaster was also the first to take riders upside-down not once but twice as they moved through the double helix that is the highlight of this coaster ride. In 1990, the Corkscrew found its new home here at Silverwood and continues as a little piece of history and a thrilling ride that people will enjoy for a while to come.
+
+Turning out of the station, you climb straight up 'til you are 70-feet high. You take a short dip, which is really just a shadow of things to come, turn again and then plunge down the hill. You are whipped around one more turn going upside-down through the double corkscrew, and then you are brought back to the station.
+
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>HIGH INTENSITY</li>
+    <li>54-80 INCHES HEIGHT</li>
+    <li>ROLLER COASTER ALLEY</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>
+  <div class="hh">
+
+
+
+
+    <img class="no" src="https://marvel-b1-cdn.bc0a.com/f00000000078081/www.silverwoodthemepark.com/images/rides/thrill/round-up.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>ROUND-UP</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">Feel the G-Forces as this ride overcomes the power of gravity.
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>HIGH INTENSITY</li>
+    <li>54-80 INCHES HEIGHT</li>
+    <li>ROLLER COASTER ALLEY</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>
+  <div class="hh">
+
+
+
+
+    <img class="no" src="https://marvel-b1-cdn.bc0a.com/f00000000078081/www.silverwoodthemepark.com/images/rides/thrill/velocity.jpg" style="position:absolute;left:0;float:left; width:170px; height:170px; margin-right:10px;margin-top:30px;margin-left:100px;border-radius:50%;">
+
+
+
+
+    <h1 style="font-weight:bold;padding-left:30px;padding-top:30px;padding-right;30pxmargin-right:15px;margin-left:260px;font-size:60px;color:#E0FFFF"><b>VELOCITY PEAK</b></h1>
+
+
+
+    <h3 class ="hi" style="position:relative;color:white;font-style:monospace; width:70%;margin-left:280px;margin-top:auto;">Our high speed water slide tower. If you've ever wanted to hit 55 mph on a thin layer of water in nothing but your swimsuit, these are your water slides. First you will climb up over 100 stairs and be faced with one of the toughest decisions of the day...which slide to go down first. Whether you choose 1, 2 or 3, you will definitely want to do all of them before you leave.
+    </h3>
+
+
+
+
+    <ul class="yo" style="margin-left:200px">
+
+    <li>HIGH INTENSITY</li>
+    <li>54-80 INCHES HEIGHT</li>
+    <li>ROLLER COASTER ALLEY</li>
+
+    </ul>
+  </div>
+
+  <hr style="border-top:1px solid #FFFFC2"/>

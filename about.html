@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <style>
+    .flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  perspective: 800px;
+  border-radius:20px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius:20px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #FFFAFA;
+  color: white;
+  transform: rotateY(180deg);
+}
+.content{
+
+
+    list-style: none;
+    font-family: Verdana, sans-serif;
+    font-size: medium;
+
+}
+.content li{
+    display: inline-block;
+    padding:100px;
+    border-radius:20px;
+
+
+
+}
+.sup {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #0000CD, 0 0 40px #006400, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #00BFFF;
+  }
+}
+.content li a{
+  border-radius:20px;
+  margin: 2px;
+  text-decoration: none;
+  border-style: solid;
+  border-color:white ;
+}
+.inc{
+  font-size:50px;
+}
+
+    </style>
+
+</head>
+
+<body>
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="vids/amu.mp4" type="video/mp4">
+    </video> -->
+
+    <div class="nav">
+        <div class="logo">
+            <a href="index.html"><img src="gifs/logo.jpg" alt="logo" style="width:90px;height:90px;" /></a>
+        </div>
+        <div class="title">
+
+            <p>Hermes's Realm</p>
+
+        </div>
+        <ul class="contents">
+            <li><a href="index.html"><b>HOME</b></a></li>
+
+            <li title="CLICK TO SEE MORE ABOUT RIDES"><a href="RIDES.html"><b>RIDES</b></a></li>
+
+            <li><a href="events.html"><b>EVENTS</b></a></li>
+            <li><a href="faq.html"><b>FAQs</b></a></li>
+            <li><a href="BOOKING.html"><b>BOOK NOW</b></a></li>
+        </ul>
+    </div>
+    <div class="title2">
+        <h1 class="sup">
+            <center>About the designers</center>
+        </h1>
+    </div>
+    <ul class="content">
+        <li><div class="flip-card">
+          <div class="flip-card-inner" >
+          <div class="flip-card-front">
+          <img src="C:\Users\nemob\OneDrive\Desktop\project\webd\images\nemo.jpg" alt="Avatar" style="width:500px;height:500px;">
+          </div>
+        <div class="flip-card-back">
+          <h1 class="sup">NEMO</h1>
+          <p style="color:black;font-size:20px;font-weight:bolder;text-align:center;">I AM CURRENTLY PERSUING BTECH IN NSUT IN CSE.I HAVE A LOT OF PASSION INT HE FIELD OF WEB AND APPS.IN THE PROCESS OF IVING INTO IT I HAVE CONTRIBUTED TO THIS WEBSITE.I ALSO LOVE BEATBOXING AND IT HELPS ME TO GET REFRESH FROM THIS HECTIC COURSE.</p>
+
+        </div>
+      </div>
+
+
+</div>
+</li>
+
+
+
+        <li><div class="flip-card">
+  <div class="flip-card-inner" >
+    <div class="flip-card-front">
+      <img src="C:\Users\nemob\OneDrive\Desktop\project\webd\images\raman.jpg" alt="Avatar" style="width:500px;height:500px;">
+    </div>
+    <div class="flip-card-back">
+      <h1 class="sup">RAGNAR</h1>
+      <p style="color:black;font-size:20px;font-weight:bolder;text-align:center;">Architect & Engineer</p>
+
+    </div>
+  </div>
+
+
+</div>
+</li>
+
+    </ul>
+
+    <!-- <div class="dekh">
+        <div class="imgr">
+            < <img src="images/about.jpg" alt="">
+        </div>
+        <div class="raman">
+            <H1>Raman</H1>
+
+
+        </div>
+
+        <div class="nemo">
+            <H1>Nimish</H1>
+        </div>
+    </div>-->
+
+
+</body>
+
+</html>

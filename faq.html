@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQS AND RATINGS</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+
+
+
+.logo img{
+  position:absolute;
+    display: inline-block;
+    margin-top:35px;
+    margin-left:10px;
+    width:90px;height:90px;
+  
+}
+.hm{
+  margin-top:none;
+  margin-left:150px;
+}
+.hey li a{
+  border:2px solid #FFFACD;
+  border-radius:10px;
+}
+.hey{
+  float: right;
+    margin-top: 80px;
+    list-style: none;
+    font-family: Verdana, sans-serif;
+    font-size: medium;
+}
+.hey li{
+  display: inline-block;
+
+}
+.hey li a{
+
+  margin: 2px;
+    text-decoration: none;
+    border-style: solid;
+    border-color:white ;
+    border-radius: 10px;
+    padding: 10px 20px;
+    /* font-family: poppins; */
+    font-family:serif;
+    color:#FFFACD;
+    font-decoration:none;
+    font-weight:bolder;
+    font-style:bold;
+
+
+}
+.hey li a:hover{
+  background-color:white;
+  color:black;
+}
+@media screen and (max-width: 600px) {
+  .hey .login-container {
+    float: none;
+  }
+
+}
+.hey .login-container button {
+float: right;
+padding: 6px 10px;
+margin-top:none;
+margin-right: 16px;
+background-color: #555;
+color: white;
+font-size: 17px;
+border: none;
+cursor: pointer;
+}
+.hey .login-container {
+float: right;
+}
+
+.hey input[type=text] {
+padding: 6px;
+margin-top:none;
+font-size: 17px;
+border: none;
+width:120px;
+}
+.hey .login-container button:hover {
+background-color: green;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  /* margin-top:80px; */
+  padding: 20px;
+  padding-top:50px;
+  font-size: 40px;
+  text-align: left;
+  background: none;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+
+/* Right column
+.rightcolumn {
+  float: left;
+  width: 15%;
+  padding-left: 20px;
+}
+*/
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #FFE4E1;
+   padding: 20px;
+   margin-top: 10px;
+   margin-left:30px;
+   margin-right:30px;
+   filer:brightness(60%);
+   color:red;
+   text-align:left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+body{
+
+  background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("https://images.unsplash.com/photo-1561174356-638d86f24f04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80");
+
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.header {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #0000CD, 0 0 40px #006400, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #191970;
+  }
+}
+
+h2,p{
+  font-weight:bolder;
+}
+.open-button {
+background-color:#00FA9A;
+color: white;
+padding: 16px 20px;
+border: 5px solid #006400	;
+cursor: pointer;
+
+position: fixed;
+bottom: 23px;
+right: 28px;
+width: 280px;
+border-radius:10px
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+display: none;
+position: fixed;
+bottom: 0;
+right: 15px;
+border: 3px solid #f1f1f1;
+z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+max-width: 300px;
+padding: 10px;
+background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+width: 90%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+resize: none;
+min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+background-color: #04AA6D;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+</style>
+</head>
+<body>
+
+
+  <div class="logo">
+    <a href="index.html"><img src="gifs/logo.jpg" alt="logo" style="width:90px;height:90px;" /></a>
+  </div>
+  <div class="hm">
+
+
+    <nav class="hey">
+      <li><a href="index.html"><b>HOME</b></a></li>
+
+        <li title="CLICK TO SEE MORE ABOUT RIDES"><a href="RIDES.html"><b>RIDES</b></a></li>
+      
+        <li><a href="events.html"><b>EVENTS</b></a></li>
+        <li><a href="faq.html"><b>FAQs</b></a></li>
+        <li><a href="BOOKING.html"><b>BOOK NOW</b></a></li>
+      <div class="login-container">
+  <!-- <form action="/action_page.php">
+    <input type="text" placeholder="Username" name="username">
+    <input type="text" placeholder="Password" name="psw">
+    <button type="submit">Login</button>
+  </form> -->
+</div>
+
+    </nav>
+
+<div class="header">
+  <h2>F.A.Q.S</h2>
+</div>
+
+
+<center>
+
+
+<div class="row">
+
+
+
+
+    <div class="card">
+      <h2>Q) WHAT IS THE NEAREST LANDMARK FOR THE AMUSEMENT PARK?</h2>
+
+
+      <p style="color:#2F4F4F;">A) IT IS JUST BEHIND THE CENTRAL PARK, YOU MAY EVEN ASK THE LOCALS FOR THE DIRECTIONS</p>
+
+    </div>
+    <div class="card">
+      <h2>Q) IS THERE ANY MEDICAL FACILITY IN YOUR REALM IN CASE IF SOME ACCIDENT OCCURS?</h2>
+
+
+      <p style="color:#2F4F4F;">A) WE HAVE A MEDICAL ROOM NEAR ALMOST EVERY ZONE, WE HAVE NEAR 20 SUCH ROOMS SPREAD ALL OVER THE PARK</p>
+
+    </div>
+    <div class="card">
+      <h2>Q) ARE THERE ANY DISCOUNTS OR OFFERS AVAILABLE IF WE BOOK TICKETS FOR A GROUP OR ORGANISATION?</h2>
+
+
+      <p style="color:#2F4F4F;">A) YES MANY SUCH EXCITING OFFERS ARE AVAILABLE, YOU CAN VIEW THEM IN THE BOOKINGS TAB </p>
+
+    </div>
+    <div class="card">
+      <h2>Q) HOW MANY RIDES ARE THERE IN YOUR PARK?</h2>
+
+
+      <p style="color:#2F4F4F;">A) WE HAVE AROUND 15+ WATER RIDES AND 30+ AMUSEMENT RIDES</p>
+
+    </div>
+    <div class="card">
+      <h2>Q) WHAT ARE THE OPENING AND CLOSING TIMINGS FOR THE PARK?</h2>
+
+
+      <p style="color:#2F4F4F;">A) THE OPENING TIME IS 10:00 AM AND THE CLOSING TIME FOR THE RIDES IS 7:00 PM AND THEN THE EVENING EVENTS ARE PLANNED TILL 1:00 AM</p>
+
+    </div>
+    <div class="card">
+      <h2>Q)WHAT ARE THE EVENTS WHICH YOU HAVE IN NIGHT, PEOPLE TALK A LOT ABOUT THAT STUFF?</h2>
+
+
+      <p style="color:#2F4F4F;">A) WE HAVE GIVEN A LIST OF EVENTS IN THE EVENTS TAB, WE HAVE PLANNED IT DAY-WISE TO ENTERTAIN DIFFERENT INTERESTS OF THE PUBLIC</p>
+
+    </div>
+
+
+
+
+</div>
+</center>
+<button class="open-button" onclick="openForm()">CHAT WITH US</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>ASK YOUR DOUBT</h1>
+
+    <label for="msg"><b>ENTER THE QUERY BELOW</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+
+
+
+
+
+</body>
